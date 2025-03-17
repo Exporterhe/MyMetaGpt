@@ -1,0 +1,30 @@
+# Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
+# Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
+# Config Docs: https://docs.deepwisdom.ai/main/en/guide/get_started/configuration.html
+# llm:
+#   api_type: "openai"  # or azure / ollama / groq etc.
+#   model: "gpt-4-turbo"  # or gpt-3.5-turbo
+#   base_url: "https://api.openai.com/v1"  # or forward url / other llm url
+#   api_key: "sk-...E_sA"
+# sk-2b281cafcfe04c0d83187d4632195204
+llm:
+  api_type: 'zhipuai'
+  api_key: '8550e2f0f0d84591bba71f5412ffd197.EI2NguG3qPXxAGVs'
+  model: 'GLM-Zero-Preview'
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+
+# llm:
+#   api_type: 'deepseek'
+#   api_key: 'sk-2b281cafcfe04c0d83187d4632195204'
+#   model: 'DeepSeek-V3'
+#   base_url: "https://api.deepseek.com/v1"
+# llm:
+#   api_type: "open_llm"  # 使用开放兼容模式
+#   api_key: 'sk-2b281cafcfe04c0d83187d4632195204'
+#   model: "deepseek-chat"  # 模型标识符（需与API文档一致）
+#   base_url: "https://api.deepseek.com/v1"  # 官方API端点
+#   custom_headers:  # 绕过标准校验
+#     X-Deepseek-Version: "2023-11-01"
+  # base_url: 'https://api.openai.com/v1'  # or any forward url.
+  # proxy: 'YOUR_LLM_PROXY_IF_NEEDED'  # Optional. If you want to use a proxy, set it here.
+  # pricing_plan: 'YOUR_PRICING_PLAN' # Optional. If your pricing plan uses a different name than the `model`.

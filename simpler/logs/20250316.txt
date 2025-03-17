@@ -1,0 +1,28 @@
+2025-03-16 22:06:18.353 | INFO     | __main__:main:54 - 写一个计算器
+2025-03-16 22:06:18.356 | DEBUG    | metagpt.roles.role:_observe:439 - Alice(SimpleCoder) observed: ['user: 写一个计算器...']
+2025-03-16 22:06:18.356 | DEBUG    | metagpt.roles.role:_set_state:334 - actions=[SimpleWriteCode], state=0
+2025-03-16 22:06:18.357 | DEBUG    | metagpt.roles.role:_react:470 - Alice(SimpleCoder): self.rc.state=0, will do SimpleWriteCode
+2025-03-16 22:06:18.357 | INFO     | __main__:_act:40 - Alice(SimpleCoder): ready to SimpleWriteCode
+2025-03-16 22:06:18.399 | DEBUG    | metagpt.provider.base_llm:aask:88 - [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': '\n    Write a python function that can 写一个计算器 and provide two runnable test cases.\n    Return ```python your_code_here ``` with NO other texts,\n    your code:\n    '}]
+2025-03-16 22:06:30.789 | WARNING  | metagpt.utils.cost_manager:update_cost:45 - Model GLM-Zero-Preview not found in TOKEN_COSTS.
+2025-03-16 22:06:30.794 | DEBUG    | metagpt.roles.role:_set_state:334 - actions=[SimpleWriteCode], state=-1
+2025-03-16 22:06:30.794 | INFO     | __main__:main:56 - SimpleCoder: 
+def calculator(operation, num1, num2):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Cannot divide by zero"
+    else:
+        return "Invalid operation"
+
+# Test cases
+print(calculator('+', 2, 3))  # Output: 5
+print(calculator('/', 10, 2))  # Output: 5.0
+
